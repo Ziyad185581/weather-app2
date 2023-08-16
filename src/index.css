@@ -94,16 +94,19 @@ h1 {
 }
 
 .app .location p {
+  left: -40%;
   font-size: 2rem;
 }
 
 .app .temp h1 {
-  font-size: 4rem;
+  left: 0%;
+  font-size: 6rem;
 }
 
 .app .description {
   position: relative;
-  right: -40%;
+ left: -40%;
+  top: 40%;
   transform-origin: 0 0;
   font-size: 2.5rem; /* Adjust the font size as needed */
   top: -10%; /* Adjust the percentage value to move it higher */
@@ -223,4 +226,64 @@ h1 {
 }
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
+}
+/* Footer.css */
+/* Footer Styles */
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+/* Footer Styles */
+.share-buttons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin: 0 1.1rem; /* Increased margin for more space */
+  transition: color 0.3s ease;
+}/* Footer Styles */
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24rem;
+}
+
+/* Footer Share Button Styles */
+.share-buttons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin: 0 1rem; /* Increased margin for spacing */
+  transition: color 0.3s ease;
+}
+
+.share-buttons a:hover {
+  color: #007bff;
+}
+
+.share-buttons p {
+  font-size: 0.9rem;
+  margin-top: 0.3rem; /* Adjusted margin for better spacing */
+  line-height: 1.2; /* Added line height for better spacing between lines */
+}
+
+/* FontAwesome Icon Styles */
+.share-buttons .icon {
+  font-size: 2.5rem; /* Increased font size for icons */
+  margin-bottom: 0.3rem; /* Added margin to the icon */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .share-buttons {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

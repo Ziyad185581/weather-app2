@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
+
 import axios from 'axios';
 import LoadingScreen from './assets/LoadingScreen'; // Update the path accordingly
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
+
+import Footer from './assets/Footer';
+
 import {
   faMapMarkerAlt,
   faTemperatureLow,
@@ -11,10 +17,9 @@ import {
   faCloud,
   faEye,
   faTachometerAlt,
-  faTint,
+  faTint
 } from '@fortawesome/free-solid-svg-icons';
 
-import { faExclamationCircle } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
@@ -205,12 +210,16 @@ function App() {
                       <p>Condition Description</p>
                     </div>
                   )}
+
+                  
                 </>
               )}
             </div>
           </div>
         )}
       </div>
+      {/* Social Sharing Buttons */}
+      <Footer/>
     </div>
   );
 }
