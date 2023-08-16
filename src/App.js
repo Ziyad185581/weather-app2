@@ -114,15 +114,24 @@ function App() {
                           {new Date(data.sys.sunrise * 1000).toLocaleTimeString()}
                         </p>
                         <p>Sunrise</p>
-                        <FontAwesomeIcon icon={faMoon} className="weather-icon" />
-                        <p className="bold">
-                          {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
-                        </p>
-                        <p>Sunset</p>
+                       
                       </>
                     )}
                   </div>
                   <div className="weather-detail">
+                    {data.sys && (
+                      <>
+                         <FontAwesomeIcon icon={faMoon} className="weather-icon" />
+                        <p className="bold">
+                          {new Date(data.sys.sunset * 1000).toLocaleTimeString()}
+                        </p>
+                        <p>Sunset</p>
+                       
+                      </>
+                    )}
+                  </div>
+                  <div className="weather-detail">
+                 
                     <FontAwesomeIcon icon={faTachometerAlt} className="weather-icon" />
                     <p className="bold">{data.main.pressure} hPa</p>
                     <p>Pressure</p>
